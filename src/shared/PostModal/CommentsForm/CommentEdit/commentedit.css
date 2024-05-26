@@ -1,0 +1,21 @@
+.listIcon {
+  display: flex;
+  align-items: center;
+  padding: 15px 19px;
+  background-color: var(--greyE5);
+}
+
+.listIcon button svg {
+  display: flex;
+  margin-right: 26px;
+  fill: var(--grey99);
+  transition: fill 0.3s ease-in-out;
+}
+
+.listIcon button {
+  display: flex;
+}
+
+.listIcon button:hover svg {
+  fill: var(--orange);
+}

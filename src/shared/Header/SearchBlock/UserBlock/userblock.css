@@ -1,0 +1,55 @@
+.userBox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.avatarBox {
+  display: flex;
+  border-radius: 100%;
+  transition: outline 0.3s ease-in-out;
+}
+
+.avatarBox img {
+  width: 30px;
+  border-radius: 100%;
+}
+
+.avatarBox > svg > path,
+.userBox > span {
+  transition: color, fill 0.3s ease-in-out;
+}
+
+.userName {
+  display: none;
+}
+
+@media all and (min-width: 1024px) {
+  .avatarBox svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .avatarBox img {
+    width: 50px;
+  }
+
+  .userName {
+    display: inline;
+  }
+}
+
+@media all and (min-width: 1540px) {
+  .userBox:hover .avatarBox > svg > path {
+    fill: var(--orange);
+  }
+
+  .userBox:hover .avatarBox {
+    outline: 1px solid var(--orange);
+    outline-offset: 5px;
+  }
+
+  .userBox:hover span {
+    color: var(--orange);
+  }
+}

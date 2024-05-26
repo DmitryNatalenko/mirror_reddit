@@ -1,0 +1,25 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+
+.control {
+  display: flex;
+}
+
+.control li:last-child {
+  display: none;
+}
+
+.control li button {
+  border: none;
+  width: auto;
+  margin-left: 0;
+  margin-right: 28px;
+}
+
+.upvote {
+  color: var(--grey99);
+}

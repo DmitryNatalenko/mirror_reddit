@@ -1,0 +1,128 @@
+.card {
+  position: relative;
+  margin-bottom: 26px;
+  background-color: var(--white);
+  border-radius: 7px;
+  padding: 20px 20px 10px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.preview {
+  margin-bottom: 13px;
+  width: 100%;
+  height: 178px;
+  background-color: var(--greyF3);
+}
+
+.content {
+  display: none;
+}
+
+.menu {
+  display: none;
+}
+
+.karma span {
+  color: var(--greyF3);
+}
+
+.karma button {
+  cursor: default;
+}
+.card .karma button:hover > svg > path {
+  fill: var(--greyF3);
+}
+
+.karma path {
+  fill: var(--greyF3);
+}
+
+
+
+@media all and (min-width: 1024px) {
+  .card {
+    background-color: transparent;
+    flex-flow: row nowrap;
+    align-items: center;
+    max-height: 107px;
+    padding: 0 40px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    width: 562px;
+  }
+
+  .title {
+    width: 100%;
+    height: 12px;
+    background-color: var(--greyF3);
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+  }
+
+  .date {
+    margin-right: 9px;
+    width: 188px;
+    height: 8px;
+    background-color: var(--greyF3)
+  }
+
+  .avatar {
+    margin-right: 9px;
+    margin-bottom: 12px;
+    margin-top: 13px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: var(--greyF3);
+  }
+
+  .name {
+    width: 120px;
+    height: 8px;
+    background-color: var(--greyF3);
+  }
+
+  .control {
+    margin-right: 7px;
+    width: 14px;
+    height: 14px;
+    border-radius: 100%;
+    background-color: var(--greyF3);
+  }
+
+  .describe {
+    width: 155px;
+    height: 8px;
+    background-color: var(--greyF3);
+  }
+
+  .menu {
+    margin-right: 37px;
+  }
+
+  .menu svg circle {
+    fill: var(--greyF3);
+  }
+
+  .preview {
+    margin-right: 38px;
+    width: 190px;
+    height: 107px;
+    background-color: var(--greyF3);
+  }
+
+}
+
+@media all and (min-width: 1540px) {
+  .card {
+    padding: 20px 60px;
+    max-height: 147px;
+  }
+}

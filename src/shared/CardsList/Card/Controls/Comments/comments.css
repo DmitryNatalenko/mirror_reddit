@@ -1,0 +1,14 @@
+.commentsButton {
+  display: flex;
+  align-items: normal;
+}
+
+.commentsButton * {
+  color: var(--greyC4);
+}
+
+@media all and (min-width: 1024px) {
+  .commentsButton {
+    display: none;
+  }
+}

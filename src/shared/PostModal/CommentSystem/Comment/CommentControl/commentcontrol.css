@@ -1,0 +1,25 @@
+.control {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.btn {
+  display: flex;
+  margin-right: 27px;
+  color: var(--grey99);
+  fill: var(--grey99);
+  transition: color, fill 0.3s ease-in-out;
+}
+
+.btn svg {
+  margin-right: 5px;
+  fill: inherit;
+}
+
+@media all and (min-width: 1540px) {
+  .btn:hover span,
+  .btn:hover {
+    color: var(--orange);
+    fill: var(--orange);
+  }
+}
